@@ -24,7 +24,6 @@ module.exports = class HelpCommand extends Command {
   }
 
   async run(msg, args) {
-    // eslint-disable-line complexity
     const groups = this.client.registry.groups;
     const commands = this.client.registry.findCommands(
       args.command,
@@ -68,7 +67,7 @@ module.exports = class HelpCommand extends Command {
           .setDescription(help.replace(/ or /g, ' ou '));
       } else if (commands.length > 15) {
         embed.setDescription(
-          "Plusieurs commandes peuvent correspondrent, merci d'être plus précis."
+          "Plusieurs commandes peuvent correspondre, merci d'être plus précis."
         );
       } else if (commands.length > 1) {
         embed.setDescription(
