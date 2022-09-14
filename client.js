@@ -19,7 +19,6 @@ module.exports = class BotClient extends CommandoClient {
       ),
     });
 
-    this.on('ready', () => this.logger.log('info', 'Je suis prêt !'));
     this.on('debug', (message) => this.logger.log('debug', message));
     this.on('warn', (message) => this.logger.log('warn', message));
     this.on('error', (message) => this.logger.log('error', message));
