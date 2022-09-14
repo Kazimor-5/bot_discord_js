@@ -4,8 +4,8 @@ const fs = require('fs'); // * On ajoute la librairie fileSystem
 const dotenv = require('dotenv'); // * On ajoute la librairie dotenv
 
 const envConfig = dotenv.parse(fs.readFileSync('.env'));
-for (const k in envConfig) {
-  process.env[k] = envConfig[k];
+for (const i in envConfig) {
+  process.env[i] = envConfig[i];
 }
 
 const client = new CommandoClient({
