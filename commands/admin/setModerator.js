@@ -8,7 +8,7 @@ module.exports = class SetModeratorCommand extends Command {
       memberName: 'set-moderator',
       group: 'admin', // * On utilise le nouveau groupe 'admin'
       description:
-        'Ajoute le role de modérateur à tous les channels et force les permissions.',
+        'Ajoute le rôle de modérateur à tous les channels et force les permissions.',
       ownerOnly: true,
       guildOnly: true, // * Uniquement dans un channel, pas de DM pour cette commande
     });

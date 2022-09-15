@@ -1,6 +1,6 @@
 const { Command } = require('discord.js-commando');
 const Discord = require('discord.js');
-const HowToApi = require('../../api/HowToApi');
+const HowToApi = require('../../api/HowToApi'); // * On utilise la classe HowToApi que nous venons de créer
 
 module.exports = class TutoCommand extends Command {
   constructor(client) {
@@ -26,9 +26,8 @@ module.exports = class TutoCommand extends Command {
       },
     });
   }
-
   async run(msg, { query }) {
-    // * Appel à l'API de mTxServ pour rechercher un tutoriel
+    // * Appel de l'API de mTxServ pour rechercher un tutoriel
     const api = new HowToApi();
     const results = await api.search(query);
 
@@ -38,16 +37,17 @@ module.exports = class TutoCommand extends Command {
 
     results
       .filter((article) => article.locale === 'fr') // * On supprime les articles en anglais
-      // * On  ajoute tous les articles restant à l'embed
+      // * On ajoute les articles restants à l'embed
       .map((article) =>
         embed.addField(
-          `${article.locale === 'fr' ? ':flag_fr:' : ':flag_us:'}, ${
-            article.link
-          }`
+          `${article.locale === 'fr' ? ':flag_fr:' : ':flag_us:'} ${
+            article.title
+          }`,
+          `${article.link}`
         )
       );
 
-    // * On garde que les 3 derniers résultats
+    // * On ne garde que les 3 derniers résultats
     embed.fields = embed.fields.slice(0, 3);
 
     return msg.say({ embed });

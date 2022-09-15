@@ -1,4 +1,4 @@
-const got = require('got');
+const axios = require('axios'); // * On ajoute la librairie axios
 
 // * Vous devez toujours encoder avec encodeURIComponent() les paramètres GET d'une URL
 const makeURL = (query) =>
@@ -6,15 +6,16 @@ const makeURL = (query) =>
 
 class HowToApi {
   async search(query) {
-    const response = await got(makeURL(query), {
-      responseType: 'json',
-    });
+    try {
+      const response = await axios.get(makeURL(query));
+      const { data } = response;
 
-    if (!response || !response.body) {
-      throw new Error('Invalid response of mTxServ.com API');
+      if (!data) throw new Error('invalid response of mTxServ.com API');
+
+      return data;
+    } catch (error) {
+      throw new Error(error.message);
     }
-
-    return response.body;
   }
 }
 
