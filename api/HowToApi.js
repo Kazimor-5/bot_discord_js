@@ -1,6 +1,6 @@
-const axios = require('axios'); // * On ajoute la librairie axios
+const axios = require('axios'); // * Ajout de la librairie axios
 
-// * Vous devez toujours encoder avec encodeURIComponent() les paramètres GET d'une URL
+// ! Toujours encoder avec encodeURIComponent() les paramètres GET d'une URL
 const makeURL = (query) =>
   `https://mtxserv.com/api/v1/articles/?query=${encodeURIComponent(query)}`;
 

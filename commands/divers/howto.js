@@ -1,6 +1,6 @@
-const { Command } = require('discord.js-commando');
-const Discord = require('discord.js');
-const HowToApi = require('../../api/HowToApi'); // * On utilise la classe HowToApi que nous venons de créer
+const { Command } = require('discord.js-commando'); // * Ajout de la librairie discord.js-commando
+const Discord = require('discord.js'); // * Ajout de la librairie discord.js
+const HowToApi = require('../../api/HowToApi'); // * Ajout de la classe HowToApi
 
 module.exports = class TutoCommand extends Command {
   constructor(client) {

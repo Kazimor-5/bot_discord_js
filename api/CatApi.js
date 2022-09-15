@@ -1,4 +1,4 @@
-const axios = require('axios');
+const axios = require('axios'); // * Ajout de la librairie axios
 const makeURL = () => 'https://api.thecatapi.com/v1/images/search?limit=1';
 
 class CatApi {

@@ -1,5 +1,5 @@
-const { Command } = require('discord.js-commando');
-const CatApi = require('../../api/CatApi');
+const { Command } = require('discord.js-commando'); // * Ajout de la librairie discord.js-commando
+const CatApi = require('../../api/CatApi'); // * Ajout de la classe CatApi
 
 module.exports = class CatCommand extends Command {
   constructor(client) {

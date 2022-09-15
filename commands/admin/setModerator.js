@@ -1,12 +1,12 @@
-const { Command } = require('discord.js-commando');
-const Discord = require('discord.js');
+const { Command } = require('discord.js-commando'); // * Ajout de la librairie discord.js-commando
+const Discord = require('discord.js'); // * Ajout de la librairie discord.js
 
 module.exports = class SetModeratorCommand extends Command {
   constructor(client) {
     super(client, {
       name: 'set-moderator',
       memberName: 'set-moderator',
-      group: 'admin', // * On utilise le nouveau groupe 'admin'
+      group: 'admin', // * Utilisation du groupe 'admin'
       description:
         'Ajoute le rôle de modérateur à tous les channels et force les permissions.',
       ownerOnly: true,
@@ -37,7 +37,7 @@ module.exports = class SetModeratorCommand extends Command {
         `Rôle 'Modérateur' ajouté sur ${channel.name}`
       );
 
-      // * On surcharge les permissions du rôle 'Modérateur' sur chaque channel du serveur
+      // * Surchargement des permissions du rôle 'Modérateur' sur chaque channel du serveur
       channel.createOverwrite(roleModerator.id, {
         ADD_REACTIONS: true, // * Ajout des réactions
         KICK_MEMBERS: true, // * Kick un membre
@@ -52,16 +52,16 @@ module.exports = class SetModeratorCommand extends Command {
         ATTACH_FILES: true, // * Envoyer des fichiers
         READ_MESSAGES_HISTORY: true, // * Voir les anciens messages
         MENTION_EVERYONE: false, // * Pouvoir mentionner @everyone
-        USE_EXTERNAL_EMOJIS: true,
-        EXTERNAL_EMOJIS: true,
-        SPEAK: true,
-        CONNECT: true,
-        MUTE_MEMBERS: true,
-        DEAFEN_MEMBERS: true,
-        MOVE_MEMBERS: true,
+        USE_EXTERNAL_EMOJIS: true, // * Utiliser les emojis d'autre serveurs
+        EXTERNAL_EMOJIS: true, // * Utiliser les émojis externe
+        SPEAK: true, // * Parler dans les channels vocals
+        CONNECT: true, // * Se connecter aux channels vocals
+        MUTE_MEMBERS: true, // * Muter les membres
+        DEAFEN_MEMBERS: true, // * Mettre les membres en sourdine
+        MOVE_MEMBERS: true, // * Déplacer les membres
         USE_VAD: true,
-        CHANGE_NICKNAME: true,
-        MANAGES_NICKNAMES: true,
+        CHANGE_NICKNAME: true, // * Changer les pseudos
+        MANAGES_NICKNAMES: true, // * Modérer les pseudos
       });
     });
 

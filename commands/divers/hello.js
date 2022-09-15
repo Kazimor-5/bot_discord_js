@@ -1,4 +1,4 @@
-const { Command } = require('discord.js-commando');
+const { Command } = require('discord.js-commando'); // * Ajout de la librairie discord.js-commando
 
 module.exports = class HelloCommand extends Command {
   constructor(client) {

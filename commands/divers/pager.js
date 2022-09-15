@@ -1,6 +1,6 @@
-const { Command } = require('discord.js-commando');
-const Discord = require('discord.js');
-const paginationEmbed = require('discord.js-pagination');
+const { Command } = require('discord.js-commando'); // * Ajout de la librairie discord.js-commando
+const Discord = require('discord.js'); //* Ajout de la librairie discord.js
+const paginationEmbed = require('discord.js-pagination'); // * Ajout de la librairie discord.js-pagination
 
 module.exports = class PagerCommand extends Command {
   constructor(client) {

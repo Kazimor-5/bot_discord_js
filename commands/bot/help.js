@@ -1,7 +1,7 @@
-const { stripIndents, oneLine } = require('common-tags');
-const { disambiguation } = require('discord.js-commando/src/util');
-const { Command } = require('discord.js-commando');
-const Discord = require('discord.js');
+const { stripIndents, oneLine } = require('common-tags'); // * Ajout de méthodes de common-tags
+const { disambiguation } = require('discord.js-commando/src/util'); //* Ajout de méthodes de discord.js-commando
+const { Command } = require('discord.js-commando'); // * Ajout de la librairie discord.js-commando
+const Discord = require('discord.js'); // * Ajout de la librairie discord.js
 
 module.exports = class HelpCommand extends Command {
   constructor(client) {

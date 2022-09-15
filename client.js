@@ -1,5 +1,5 @@
-const { CommandoClient } = require('discord.js-commando');
-const winston = require('winston');
+const { CommandoClient } = require('discord.js-commando'); // * Ajout de la librairie discord.js-commando
+const winston = require('winston'); // * Ajout de la librairie winston
 
 module.exports = class BotClient extends CommandoClient {
   constructor(options) {

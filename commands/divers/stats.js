@@ -1,5 +1,5 @@
-const { Command } = require('discord.js-commando');
-const Discord = require('discord.js');
+const { Command } = require('discord.js-commando'); // * Ajout de la librairie discord.js-commando
+const Discord = require('discord.js'); // * Ajout de la librairie discord.js
 
 module.exports = class StatsCommand extends Command {
   constructor(client) {
