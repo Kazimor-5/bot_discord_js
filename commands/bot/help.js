@@ -10,7 +10,7 @@ module.exports = class HelpCommand extends Command {
       memberName: 'help',
       group: 'bot',
       aliases: ['h'],
-      description: 'Display the list of available commands.',
+      description: 'Affiche la liste des commandes disponibles.',
       clientPermissions: ['SEND_MESSAGES'],
       args: [
         {

@@ -8,7 +8,7 @@ module.exports = class StatsCommand extends Command {
       memberName: 'stats',
       group: 'divers',
       description:
-        "Display the number of Discord's servers where the bot is currently",
+        'Affiche le nombre de serveurs Discord où le bot est présent.',
     });
   }
 

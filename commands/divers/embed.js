@@ -7,7 +7,7 @@ module.exports = class EmbedCommand extends Command {
       name: 'embed',
       memberName: 'embed',
       group: 'divers',
-      description: 'Send an embed message.',
+      description: 'Envoie un message intégré.',
       ownerOnly: true,
       clientPermissions: ['SEND_MESSAGES'],
       throttling: {

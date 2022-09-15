@@ -8,7 +8,7 @@ module.exports = class StatsCommands extends Command {
       memberName: 'roles',
       group: 'divers',
       description:
-        'Lists the server roles and the number of members in each role.',
+        'Liste les rôles du serveurs et le nombre de membres dans chaque rôles',
     });
   }
 

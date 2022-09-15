@@ -7,7 +7,7 @@ module.exports = class HelloCommand extends Command {
       memberName: 'hello',
       group: 'divers',
       aliases: ['bonjour', 'hi'],
-      description: 'Replies with a hello message',
+      description: 'Répond avec un message de salutation.',
       guildOnly: false,
       throttling: {
         usages: 2,

@@ -6,7 +6,7 @@ module.exports = class ReplyCommand extends Command {
       name: 'reply',
       memberName: 'reply',
       group: 'divers',
-      description: 'Reply',
+      description: 'Répond à un message.',
       clientPermissions: ['SEND_MESSAGES'],
       throttling: {
         usages: 2,

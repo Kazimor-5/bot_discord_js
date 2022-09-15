@@ -6,7 +6,7 @@ module.exports = class TestLoggerCommand extends Command {
       name: 'logger',
       memberName: 'logger',
       group: 'divers',
-      description: 'Test the logger',
+      description: 'Test le logger',
     });
   }
 
