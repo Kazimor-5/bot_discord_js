@@ -35,7 +35,7 @@ module.exports = class EmbedCommand extends Command {
         `Envoyé par ${this.client.user.tag}.`,
         `${this.client.user.displayAvatarURL()}`
       )
-      .setTimestamp(new Date().toLocaleDateString())
+      .setTimestamp(new Date())
       // * Maximum de 25 addFields
       .addField(
         // * Sur une ligne complète

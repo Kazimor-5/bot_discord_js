@@ -15,7 +15,7 @@ module.exports = class ReplyCommand extends Command {
       args: [
         {
           key: 'text',
-          prompt: "Tu vas nin commencé à m'choper par l'colback !?",
+          prompt: 'Tu vas nin commencé à jouer avec mes couilles hein !?',
           type: 'string',
         },
       ],

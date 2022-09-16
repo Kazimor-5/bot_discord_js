@@ -19,7 +19,7 @@ module.exports = class StatsCommands extends Command {
         `${this.client.user.displayAvatarURL()}`
       )
       .setColor('BLUE')
-      .setTimestamp(new Date().toLocaleDateString());
+      .setTimestamp(new Date());
 
     const guildMembers = msg.guild.members.cache;
 
