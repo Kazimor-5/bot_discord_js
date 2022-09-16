@@ -4,7 +4,7 @@ OufGuedin Bot est un bot Discord que j'ai créé dans le but de tester l'API de 
 
 ### Commandes du bot
 
-- ・ Divers
+- Divers
 - cat: Affiche une image aléatoire de chat
 - presentation: Envoie un message intégré.
 - hello: Répond avec un message de salutation.
@@ -15,8 +15,8 @@ OufGuedin Bot est un bot Discord que j'ai créé dans le but de tester l'API de 
 - roles: Liste les rôles du serveurs et le nombre de membres dans chaque rôles
 - stats: Affiche le nombre de serveurs Discord où le bot est présent.
 
-- ・ Admin
+- Admin
 - set-moderator: Ajoute le rôle de modérateur à tous les channels et force les permissions.
 
-- ・ Bot
+- Bot
 - help: Affiche la liste des commandes disponibles.
